@@ -2,30 +2,28 @@
   <div>
     <h1>Услуги</h1>
     <ul>
-      <li v-for="(service, index) in services" :key="index">
-        <a @click="openService(service.name)">{{service.text}}</a>
-      </li>
+      <!-- <li v-for="(service, index) in services" :key="index">
+        <a @click="openService(service.id)">{{service.text}}</a>
+      </li> -->
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    services: [
-      {
-        name: 'woodworking',
-        text: 'Обработка по дереву'
-      },
-      {
-        name: 'another',
-        text: 'Другое'
-      }
-    ]
-  }),
+  async fetch({store}) {
+    if (store.getters['services/services'].length === 0) {
+      await store.dispatch('services/fetch')
+    }
+  },
+  computed: {
+    services() {
+      return this.$store.getters['services/services']
+    }
+  },
   methods: {
-    openService(serviceName) {
-      this.$router.push(`/services/${serviceName}`)
+    openService(serviceId) {
+      this.$router.push(`/services/${serviceId}`)
     }
   }
 }

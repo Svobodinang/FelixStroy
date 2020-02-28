@@ -19,12 +19,13 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'blue' },
   /*
   ** Global CSS
   */
   css: [
-    '@/node_modules/bootstrap/dist/css/bootstrap.min.css'
+    '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    { src: '~assets/less/main.less', lang: 'less' }
   ],
   /*
   ** Plugins to load before mounting the App

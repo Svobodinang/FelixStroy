@@ -1,0 +1,20 @@
+{
+  "name": "felixStroy",
+  "version": "1.0.0",
+  "description": "My incredible Nuxt.js project",
+  "author": "Hope",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "bootstrap": "^4.4.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}

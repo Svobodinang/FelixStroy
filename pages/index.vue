@@ -1,14 +1,14 @@
 <template>
   <div class="main">
-    Главная
-  </div>
+    <p>khjkjhkjhkh</p> kjhkhj</div>
 </template>
 
 <script>
-
-export default {
-}
+export default {};
 </script>
 
-<style>
+<style scoped>
+.main {
+  color: red;
+}
 </style>

@@ -25,7 +25,7 @@ export default {
   */
   css: [
     '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
-    { src: '~assets/less/main.less', lang: 'less' }
+    { src: '~assets/scss/main.scss', lang: 'scss' }
   ],
   /*
   ** Plugins to load before mounting the App
@@ -44,6 +44,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
   /*
   ** Axios module configuration
@@ -51,6 +52,15 @@ export default {
   */
   axios: {
   },
+
+  // Чтобы глобально подключать файлы стилей
+  styleResources: {
+    scss: [
+      'assets/scss/_variables.scss'
+    ]
+  },
+
+
   /*
   ** Build configuration
   */
@@ -58,6 +68,8 @@ export default {
     /*
     ** You can extend webpack config here
     */
+  //  Уменшит код css?
+    extractCSS: true,
     extend (config, ctx) {
     }
   }

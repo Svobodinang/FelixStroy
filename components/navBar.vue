@@ -1,18 +1,20 @@
 <template>
   <div>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center main-padding-y main-padding-x">
       <div class="logo">
         <img src="~/assets/logo/logo.svg" alt />
       </div>
       <div class="d-flex">
         <menu>
-          <nuxt-link exact no-prefetch active-class="active" to="/">Главная</nuxt-link>
-          <nuxt-link active-class="active" to="/services">Услуги</nuxt-link>
-          <nuxt-link exact active-class="active" to="/contacts">Контакты</nuxt-link>
+          <nuxt-link exact no-prefetch active-class="active" to="/">главная</nuxt-link>
+          <nuxt-link active-class="active" to="/services">услуги</nuxt-link>
+          <nuxt-link exact active-class="active" to="/contacts">примеры работ</nuxt-link>
+          <nuxt-link exact active-class="active" to="/">калькулятор</nuxt-link>
+          <nuxt-link exact active-class="active" to="/">контакты</nuxt-link>
         </menu>
-        <div class="info">
+        <div class="info d-flex flex-column justify-content-start">
           <p class="number">8-800-555-35-35</p>
-          <p>ежедневно с 10:00 до 19:00</p>
+          <small>ежедневно с 10:00 до 19:00</small>
         </div>
       </div>
     </div>
@@ -21,8 +23,5 @@
   </div>
 </template>
 
-<style lang="less" scoped>
-menu {
-  color: @veryDarkGrey;
-}
+<style lang="scss" scoped>
 </style>

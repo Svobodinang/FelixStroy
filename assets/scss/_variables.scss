@@ -1,0 +1,30 @@
+// ! ШРИФТЫ
+@font-face {
+  font-family: "NoahRegular";
+  src: url("../fonts/noah/Noah-Regular.otf") format("opentype"),
+    url("../fonts/noah/Noah-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NoahRegularItalic";
+  src: url("../fonts/noah/Noah-RegularItalic.otf") format("opentype"),
+    url("../fonts/noah/Noah-RegularItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NoahBold";
+  src: url("../fonts/noah/Noah-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NoahBoldItalic";
+  src: url("../fonts/noah/Noah-BoldItalic.otf") format("opentype"),
+    url("../fonts/noah/Noah-BoldItalic.ttf") format("truetype");
+}
+
+// ! ЦВЕТА
+$veryDarkGrey: #242423;
+$darkGrey: #3d3c3c;
+$lightGray: #f5f5f5;
+$darkGreen: #0f2612;
+$darkBrown: #663300;
+$accent: #ec923f;
+$darkBeige: #c4a56e;
+$lightGray: #f7f2ea;

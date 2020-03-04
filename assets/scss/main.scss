@@ -1,0 +1,60 @@
+@import "variables";
+
+// ! ОТМЕНА НАСТРОЕК ПО УМОЛЧАНИЮ
+menu,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: unset;
+  &:hover {
+    color: unset;
+    text-decoration: unset;
+  }
+}
+
+// ! Шрифты
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "NoahRegular";
+  font-style: normal;
+  font-weight: 2;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.25rem;
+}
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+li {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 105%;
+  letter-spacing: 0.03em;
+}
+small {
+  font-size: 0.65rem;
+}
+
+// padding
+.main-padding-x {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.main-padding-y {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}

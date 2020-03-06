@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <div class="d-flex justify-content-between align-items-center main-padding-y main-padding-x">
+  <div class="top-menu w-100">
+    <div
+      class="d-flex justify-content-between align-items-center main-padding-y main-padding-x w-100"
+    >
       <div class="logo">
         <img src="~/assets/logo/logo.svg" alt />
       </div>
-      <div class="d-flex">
+      <div class="d-flex right-side justify-content-between">
         <menu>
           <nuxt-link exact no-prefetch active-class="active" to="/">главная</nuxt-link>
           <nuxt-link active-class="active" to="/services">услуги</nuxt-link>
@@ -24,4 +26,24 @@
 </template>
 
 <style lang="scss" scoped>
+.top-menu {
+  background: $transparent;
+  position: fixed;
+  .right-side {
+    width: 70%;
+    menu {
+      width: 70%;
+      a:not(:last-child) {
+        padding: 10px 0;
+        &:not(:last-child) {
+          margin-right: 5%;
+        }
+        &.active {
+          color: $darkBrown;
+          border-bottom: 1px solid $darkBrown;
+        }
+      }
+    }
+  }
+}
 </style>

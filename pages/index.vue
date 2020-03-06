@@ -1,14 +1,19 @@
 <template>
   <div class="main">
-    <p>khjkjhkjhkh</p> kjhkhj</div>
+    <img src="~assets/main/mainBackground.jpg" alt="">
+  </div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .main {
-  color: red;
+  height: 100vh;
+  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 </style>

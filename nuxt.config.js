@@ -24,7 +24,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    '~node_modules/bootstrap/dist/css/bootstrap.min.css',
     { src: '~assets/scss/main.scss', lang: 'scss' }
   ],
   /*

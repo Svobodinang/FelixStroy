@@ -1,22 +1,22 @@
 // ! ШРИФТЫ
 @font-face {
   font-family: "NoahRegular";
-  src: url("../fonts/noah/Noah-Regular.otf") format("opentype"),
-    url("../fonts/noah/Noah-Regular.ttf") format("truetype");
+  src: url("~assets/fonts/noah/Noah-Regular.otf") format("opentype"),
+    url("~assets/fonts/noah/Noah-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "NoahRegularItalic";
-  src: url("../fonts/noah/Noah-RegularItalic.otf") format("opentype"),
-    url("../fonts/noah/Noah-RegularItalic.ttf") format("truetype");
+  src: url("~assets/fonts/noah/Noah-RegularItalic.otf") format("opentype"),
+    url("~assets/fonts/noah/Noah-RegularItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "NoahBold";
-  src: url("../fonts/noah/Noah-Bold.ttf") format("truetype");
+  src: url("~assets/fonts/noah/Noah-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "NoahBoldItalic";
-  src: url("../fonts/noah/Noah-BoldItalic.otf") format("opentype"),
-    url("../fonts/noah/Noah-BoldItalic.ttf") format("truetype");
+  src: url("~assets/fonts/noah/Noah-BoldItalic.otf") format("opentype"),
+    url("~assets/fonts/noah/Noah-BoldItalic.ttf") format("truetype");
 }
 
 // ! ЦВЕТА
@@ -28,3 +28,4 @@ $darkBrown: #663300;
 $accent: #ec923f;
 $darkBeige: #c4a56e;
 $lightGray: #f7f2ea;
+$transparent: rgba(255, 255, 255, 0.75);
